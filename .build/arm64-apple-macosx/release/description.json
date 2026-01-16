@@ -1,0 +1,221 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.TypeShield-arm64-apple-macosx26.0-release.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/sources",
+      "importPath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/Sources/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "TypeShield",
+      "moduleOutputPath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/Modules/TypeShield.swiftmodule",
+      "objects" : [
+        "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "14",
+        "-serialize-diagnostics",
+        "-O",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "TypeShield_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "typeshield_agpl_v3"
+      ],
+      "outputFileMapPath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/Modules/TypeShield.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/Sources/main.swift"
+      ],
+      "tempsPath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "TypeShield" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "TypeShield",
+      "-package-name",
+      "typeshield_agpl_v3",
+      "-c",
+      "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/Sources/main.swift",
+      "-I",
+      "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "14",
+      "-serialize-diagnostics",
+      "-O",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "TypeShield_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "typeshield_agpl_v3",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "TypeShield" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/Sources/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/sources"
+    },
+    "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.product/Objects.LinkFileList"
+    },
+    "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

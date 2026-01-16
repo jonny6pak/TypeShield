@@ -1,0 +1,124 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PLIST="$HOME/Library/LaunchAgents/com.typeshield.agent.plist"
+LABEL="com.typeshield.agent"
+LOG_OUT="$HOME/Library/Logs/typeshield.out.log"
+LOG_ERR="$HOME/Library/Logs/typeshield.err.log"
+
+usage() {
+  cat <<EOF
+TypeShield Control Utility
+Usage: typeshieldctl [command]
+
+Commands:
+  start       Load and start TypeShield
+  stop        Unload (pause) TypeShield
+  restart     Reload TypeShield (after editing plist)
+  status      Show whether it's running and current args
+  logs        Tail logs (Ctrl+C to stop)
+  edit        Edit LaunchAgent plist (auto-restarts if loaded & changed)
+  path        Show where the plist and binary live
+  help        Show this help message
+EOF
+}
+
+hash_file() {
+  if command -v md5 >/dev/null 2>&1; then md5 -q "$1"
+  elif command -v shasum >/dev/null 2>&1; then shasum "$1" | awk '{print $1}'
+  else echo "nohash"
+  fi
+}
+
+is_loaded() {
+  launchctl print "gui/$(id -u)/$LABEL" >/dev/null 2>&1
+}
+
+start() {
+  echo "Starting TypeShield..."
+  launchctl load -w "$PLIST"
+  sleep 0.3
+  status
+}
+
+stop() {
+  echo "Stopping TypeShield..."
+  launchctl unload "$PLIST" 2>/dev/null || echo "Not loaded."
+}
+
+restart() {
+  echo "Restarting TypeShield..."
+  stop
+  start
+}
+
+status() {
+  if ! is_loaded; then
+    echo "TypeShield is not loaded."
+    return 0
+  fi
+  local state
+  state=$(launchctl print "gui/$(id -u)/$LABEL" | grep "state" | awk '{print $3}')
+  echo "State: $state"
+  echo "Program arguments:"
+  launchctl print "gui/$(id -u)/$LABEL" | grep -A7 'program ='
+}
+
+logs() {
+  echo "Following logs (Ctrl+C to exit)"
+  mkdir -p "$(dirname "$LOG_OUT")"
+  touch "$LOG_OUT" "$LOG_ERR"
+  tail -f "$LOG_OUT" "$LOG_ERR"
+}
+
+edit() {
+  if [ ! -f "$PLIST" ]; then
+    echo "Missing plist: $PLIST"
+    exit 1
+  fi
+
+  local was_loaded=0
+  if is_loaded; then
+    was_loaded=1
+    echo "TypeShield currently loaded; will restart if you save changes."
+  else
+    echo "TypeShield not loaded; changes will not auto-start."
+  fi
+
+  local before after
+  before=$(hash_file "$PLIST")
+  echo "Opening plist in TextEdit (close when done)..."
+  open -W -e "$PLIST"
+  after=$(hash_file "$PLIST")
+
+  if [ "$before" != "$after" ]; then
+    echo "Detected changes."
+    if [ "$was_loaded" -eq 1 ]; then
+      restart
+    else
+      echo "Plist updated. Run 'typeshieldctl start' when ready."
+    fi
+  else
+    echo "No changes detected."
+  fi
+}
+
+path_cmd() {
+  echo "Plist: $PLIST"
+  if [ -f "$PLIST" ]; then
+    local bin
+    bin=$(plutil -extract ProgramArguments xml1 -o - "$PLIST" 2>/dev/null | awk -F'[<>]' '/string/{print $3}' | head -n1)
+    [ -n "${bin:-}" ] && echo "Binary: $bin"
+  fi
+}
+
+case "${1:-help}" in
+  start)   start ;;
+  stop)    stop ;;
+  restart) restart ;;
+  status)  status ;;
+  logs)    logs ;;
+  edit)    edit ;;
+  path)    path_cmd ;;
+  help|*)  usage ;;
+esac

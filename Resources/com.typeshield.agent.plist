@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.typeshield.agent</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/typeshield</string>
+    <string>--block-ms</string><string>300</string>
+    <string>--grace-ms</string><string>30</string>
+    <!-- Omit --allow-scroll to block scrolling, include it to allow scroll -->
+    <string>--allow-scroll</string>
+    <!-- Remove --verbose to silence logs -->
+    <string>--verbose</string>
+  </array>
+
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+
+  <key>StandardOutPath</key><string>~/Library/Logs/typeshield.out.log</string>
+  <key>StandardErrorPath</key><string>~/Library/Logs/typeshield.err.log</string>
+</dict>
+</plist>

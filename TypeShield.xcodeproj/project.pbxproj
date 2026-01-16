@@ -1,0 +1,171 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    B1A1B0B2269E000100000001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A1B0B1269E000100000001 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    B1A1B0B0269E000100000001 /* TypeShield */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TypeShield; sourceTree = BUILT_PRODUCTS_DIR; };
+    B1A1B0B1269E000100000001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = Sources/main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+    B1A1B09C269DFFFF00000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+    B1A1B095269DFFFE00000001 = {
+      isa = PBXGroup;
+      children = (
+        B1A1B0B4269E000100000001 /* Sources */,
+        B1A1B0B3269E000100000001 /* Products */,
+      );
+      sourceTree = "<group>";
+    };
+    B1A1B0B4269E000100000001 /* Sources */ = {
+      isa = PBXGroup;
+      children = (
+        B1A1B0B1269E000100000001 /* main.swift */,
+      );
+      name = Sources;
+      sourceTree = "<group>";
+    };
+    B1A1B0B3269E000100000001 /* Products */ = {
+      isa = PBXGroup;
+      children = (
+        B1A1B0B0269E000100000001 /* TypeShield */,
+      );
+      name = Products;
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    B1A1B09D269DFFFF00000001 /* TypeShield */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = B1A1B0A4269E000000000001 /* Build configuration list for PBXNativeTarget "TypeShield" */;
+      buildPhases = (
+        B1A1B099269DFFFF00000001 /* Sources */,
+        B1A1B09C269DFFFF00000001 /* Frameworks */,
+      );
+      buildRules = ( );
+      dependencies = ( );
+      name = TypeShield;
+      productName = TypeShield;
+      productReference = B1A1B0B0269E000100000001 /* TypeShield */;
+      productType = "com.apple.product-type.tool";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+    B1A1B096269DFFFE00000001 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastSwiftUpdateCheck = 1500;
+        LastUpgradeCheck = 1500;
+        TargetAttributes = {
+          B1A1B09D269DFFFF00000001 = {
+            CreatedOnToolsVersion = 15.0;
+          };
+        };
+      };
+      buildConfigurationList = B1A1B097269DFFFE00000001 /* Build configuration list for PBXProject "TypeShield" */;
+      compatibilityVersion = "Xcode 15.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = B1A1B095269DFFFE00000001;
+      productRefGroup = B1A1B0B3269E000100000001 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        B1A1B09D269DFFFF00000001 /* TypeShield */,
+      );
+    };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+    B1A1B099269DFFFF00000001 /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        B1A1B0B2269E000100000001 /* main.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+    B1A1B0A5269E000000000001 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        MACOSX_DEPLOYMENT_TARGET = 13.0;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        SUPPORTED_PLATFORMS = "macosx";
+      };
+      name = Debug;
+    };
+    B1A1B0A6269E000000000001 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        MACOSX_DEPLOYMENT_TARGET = 13.0;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        SUPPORTED_PLATFORMS = "macosx";
+      };
+      name = Release;
+    };
+    B1A1B0A7269E000000000001 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CLANG_ENABLE_MODULES = YES;
+        SWIFT_VERSION = 5.0;
+        MACOSX_DEPLOYMENT_TARGET = 13.0;
+        PRODUCT_NAME = TypeShield;
+      };
+      name = Debug;
+    };
+    B1A1B0A8269E000000000001 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CLANG_ENABLE_MODULES = YES;
+        SWIFT_VERSION = 5.0;
+        MACOSX_DEPLOYMENT_TARGET = 13.0;
+        PRODUCT_NAME = TypeShield;
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    B1A1B097269DFFFE00000001 /* Build configuration list for PBXProject "TypeShield" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        B1A1B0A5269E000000000001 /* Debug */,
+        B1A1B0A6269E000000000001 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    B1A1B0A4269E000000000001 /* Build configuration list for PBXNativeTarget "TypeShield" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        B1A1B0A7269E000000000001 /* Debug */,
+        B1A1B0A8269E000000000001 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = B1A1B096269DFFFE00000001 /* Project object */;
+}

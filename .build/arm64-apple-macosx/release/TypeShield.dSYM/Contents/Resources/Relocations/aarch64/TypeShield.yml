@@ -1,0 +1,45 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield'
+relocations:
+  - { offset: 0x8EED5, size: 0x8, addend: 0x0, symName: '_$s10TypeShield4optsAA7OptionsVvp', symObjAddr: 0xBC88, symBinAddr: 0x100008250, symSize: 0x0 }
+  - { offset: 0x8EEFB, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5stateAA5StateCvp', symObjAddr: 0xBCA0, symBinAddr: 0x100008268, symSize: 0x0 }
+  - { offset: 0x8EFB5, size: 0x8, addend: 0x0, symName: '_$s10TypeShield12keyboardMasks6UInt64Vvp', symObjAddr: 0xBCA8, symBinAddr: 0x100008270, symSize: 0x0 }
+  - { offset: 0x8EFCF, size: 0x8, addend: 0x0, symName: '_$s10TypeShield11pointerMasks6UInt64Vvp', symObjAddr: 0xBCB0, symBinAddr: 0x100008278, symSize: 0x0 }
+  - { offset: 0x8EFE9, size: 0x8, addend: 0x0, symName: '_$s10TypeShield12pointerTypesSaySo07CGEventA0VGvp', symObjAddr: 0xBCB8, symBinAddr: 0x100008280, symSize: 0x0 }
+  - { offset: 0x8F003, size: 0x8, addend: 0x0, symName: '_$s10TypeShield8kbTapRefSo010CFMachPortE0aSgvp', symObjAddr: 0xBCC0, symBinAddr: 0x100008288, symSize: 0x0 }
+  - { offset: 0x8F01D, size: 0x8, addend: 0x0, symName: '_$s10TypeShield8ptTapRefSo010CFMachPortE0aSgvp', symObjAddr: 0xBCC8, symBinAddr: 0x100008290, symSize: 0x0 }
+  - { offset: 0x8F037, size: 0x8, addend: 0x0, symName: '_$s10TypeShield10kbCallbackys9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0fA0VAFSvSgtXCvp', symObjAddr: 0xBCD0, symBinAddr: 0x100008298, symSize: 0x0 }
+  - { offset: 0x8F051, size: 0x8, addend: 0x0, symName: '_$s10TypeShield10ptCallbackys9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0fA0VAFSvSgtXCvp', symObjAddr: 0xBCD8, symBinAddr: 0x1000082A0, symSize: 0x0 }
+  - { offset: 0x8F06B, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5kbSrcSo18CFRunLoopSourceRefaSgvp', symObjAddr: 0xBCE0, symBinAddr: 0x1000082A8, symSize: 0x0 }
+  - { offset: 0x8F085, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5ptSrcSo18CFRunLoopSourceRefaSgvp', symObjAddr: 0xBCE8, symBinAddr: 0x1000082B0, symSize: 0x0 }
+  - { offset: 0x8F09F, size: 0x8, addend: 0x0, symName: '_$s10TypeShield8watchdogSo24OS_dispatch_source_timer_pvp', symObjAddr: 0xBCF0, symBinAddr: 0x1000082B8, symSize: 0x0 }
+  - { offset: 0x8F0EF, size: 0x8, addend: 0x0, symName: _TypeShield_main, symObjAddr: 0x0, symBinAddr: 0x100000EC8, symSize: 0x90C }
+  - { offset: 0x8F5A5, size: 0x8, addend: 0x0, symName: '_$s10TypeShield12parseOptionsAA0D0VyF', symObjAddr: 0x90C, symBinAddr: 0x1000017D4, symSize: 0x9B4 }
+  - { offset: 0x8FDEC, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateCMa', symObjAddr: 0x12C0, symBinAddr: 0x100002188, symSize: 0x20 }
+  - { offset: 0x8FE0B, size: 0x8, addend: 0x0, symName: '_$s10TypeShields9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0dA0VAESvSgtcfU_To', symObjAddr: 0x14C4, symBinAddr: 0x10000238C, symSize: 0x44 }
+  - { offset: 0x8FE44, size: 0x8, addend: 0x0, symName: '_$s10TypeShields9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0dA0VAESvSgtcfU0_To', symObjAddr: 0x169C, symBinAddr: 0x100002564, symSize: 0x44 }
+  - { offset: 0x8FE72, size: 0x8, addend: 0x0, symName: '_$s10TypeShieldyycfU1_', symObjAddr: 0x16E0, symBinAddr: 0x1000025A8, symSize: 0x38 }
+  - { offset: 0x8FED6, size: 0x8, addend: 0x0, symName: '_$s10TypeShieldys5Int32VcfU2_To', symObjAddr: 0x17D8, symBinAddr: 0x1000026A0, symSize: 0xC }
+  - { offset: 0x8FF1E, size: 0x8, addend: 0x0, symName: '_$s10TypeShieldys5Int32VcfU3_To', symObjAddr: 0x17E4, symBinAddr: 0x1000026AC, symSize: 0x8 }
+  - { offset: 0x8FF3A, size: 0x8, addend: 0x0, symName: '_$s10TypeShieldys5Int32VcfU3_To', symObjAddr: 0x17E4, symBinAddr: 0x1000026AC, symSize: 0x8 }
+  - { offset: 0x8FF4C, size: 0x8, addend: 0x0, symName: '_$sIeg_IyB_TR', symObjAddr: 0x1818, symBinAddr: 0x1000026E0, symSize: 0x20 }
+  - { offset: 0x8FF64, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x1A50, symBinAddr: 0x100002918, symSize: 0x44 }
+  - { offset: 0x8FF78, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameAbstractV2, symObjAddr: 0x1AD4, symBinAddr: 0x10000299C, symSize: 0x44 }
+  - { offset: 0x8FF8C, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x1B18, symBinAddr: 0x1000029E0, symSize: 0x10 }
+  - { offset: 0x8FFA0, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1B28, symBinAddr: 0x1000029F0, symSize: 0x8 }
+  - { offset: 0x8FFB4, size: 0x8, addend: 0x0, symName: '_$sSo11CGEventTypeVMa', symObjAddr: 0x1B30, symBinAddr: 0x1000029F8, symSize: 0x50 }
+  - { offset: 0x8FFC8, size: 0x8, addend: 0x0, symName: '_$s10TypeShields9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0dA0VAESvSgtcfU_Tf4dnnd_n', symObjAddr: 0x1B9C, symBinAddr: 0x100002A64, symSize: 0x154 }
+  - { offset: 0x9005F, size: 0x8, addend: 0x0, symName: '_$s10TypeShields9UnmanagedVySo10CGEventRefaGSgs13OpaquePointerV_So0dA0VAESvSgtcfU0_Tf4dnnd_n', symObjAddr: 0x1CF0, symBinAddr: 0x100002BB8, symSize: 0x17C }
+  - { offset: 0x900F6, size: 0x8, addend: 0x0, symName: '_$s10TypeShieldys5Int32VcfU2_Tf4d_n', symObjAddr: 0x1E6C, symBinAddr: 0x100002D34, symSize: 0x80 }
+  - { offset: 0x90147, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateC18shouldBlockPointer3now7blockMs05graceI0SbSd_S2dtFyyXEfU_TA', symObjAddr: 0x1F10, symBinAddr: 0x100002DD8, symSize: 0x10 }
+  - { offset: 0x9018D, size: 0x8, addend: 0x0, symName: '_$sIg_Ieg_TRTA', symObjAddr: 0x1F30, symBinAddr: 0x100002DF8, symSize: 0x20 }
+  - { offset: 0x901B6, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateC10markKeyNowyyFyyYbcfU_TA', symObjAddr: 0x1F50, symBinAddr: 0x100002E18, symSize: 0x18 }
+  - { offset: 0x90608, size: 0x8, addend: 0x0, symName: '_$sSo18OS_dispatch_sourceP8DispatchE15setEventHandler3qos5flags7handleryAC0D3QoSV_AC0D13WorkItemFlagsVyyXBSgtFfA0_', symObjAddr: 0x171C, symBinAddr: 0x1000025E4, symSize: 0xBC }
+  - { offset: 0x906B6, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateC10markKeyNowyyF', symObjAddr: 0x12E0, symBinAddr: 0x1000021A8, symSize: 0x1E4 }
+  - { offset: 0x90726, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateC18shouldBlockPointer3now7blockMs05graceI0SbSd_S2dtF', symObjAddr: 0x1508, symBinAddr: 0x1000023D0, symSize: 0x194 }
+  - { offset: 0x90804, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateCfD', symObjAddr: 0x1838, symBinAddr: 0x100002700, symSize: 0x24 }
+  - { offset: 0x90845, size: 0x8, addend: 0x0, symName: '_$s10TypeShield5StateCACycfc', symObjAddr: 0x185C, symBinAddr: 0x100002724, symSize: 0x1F4 }
+  - { offset: 0x908BD, size: 0x8, addend: 0x0, symName: '_$sSo11CGEventTypeVSYSCSY8rawValuexSg03RawD0Qz_tcfCTW', symObjAddr: 0x1B80, symBinAddr: 0x100002A48, symSize: 0x10 }
+  - { offset: 0x908D1, size: 0x8, addend: 0x0, symName: '_$sSo11CGEventTypeVSYSCSY8rawValue03RawD0QzvgTW', symObjAddr: 0x1B90, symBinAddr: 0x100002A58, symSize: 0xC }
+...
