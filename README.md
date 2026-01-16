@@ -1,6 +1,6 @@
 # TypeShield (AGPL-3.0)
 
-> **Please note that I created this for my own personal use. I will not be maintaining or updating this code unless I need to make edits for myself. If you want a feature please fork the code and do whatever you need with it as allowable under the license.**
+> **Please note that I created this for my own personal use. I will not be maintaining or updating this code unless I need to make edits for myself. If you want a feature please fork the code and do whatever you need with it as allowable under the license. For the most part this works.  Every so often I get a stray palm touch that moves my cursor but it's nowhere near as often as it used to be.  I hope this helps someone out there.**
 
 **TypeShield** blocks trackpad/mouse input for a brief window after each keypress to prevent stray palm touches while typing.  
 Apple Silicon native (M1–M4), macOS 13+.
