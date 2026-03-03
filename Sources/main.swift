@@ -143,7 +143,7 @@ guard let kbTap = CGEvent.tapCreate(tap: .cgSessionEventTap,
 }
 kbTapRef = kbTap
 
-guard let ptTap = CGEvent.tapCreate(tap: .cgSessionEventTap,
+guard let ptTap = CGEvent.tapCreate(tap: .cghidEventTap,
                                     place: .headInsertEventTap,
                                     options: .defaultTap,
                                     eventsOfInterest: pointerMask,
