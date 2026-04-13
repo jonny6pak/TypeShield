@@ -1,6 +1,6 @@
 # TypeShield (AGPL-3.0)
 
-> **Please note that I created this for my own personal use. I will not be maintaining or updating this code unless I need to make edits for myself. If you want a feature please fork the code and do whatever you need with it as allowable under the license.**
+> **Please note that I created this for my own personal use. It is 100% vibe coded, with human review, to solve a problem of my own. I'm merely sharing in case anyone else wants to play with it.  It's not working 100% yet but it has saved me from a lot of false reads on the trackpad.  If you want a feature please fork the code and do whatever you need with it as allowable under the license.**
 
 **TypeShield** blocks trackpad/mouse input for a brief window after each keypress to prevent stray palm touches while typing.  
 Apple Silicon native (M1–M5), macOS 13+.
