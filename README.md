@@ -1,6 +1,6 @@
 # TypeShield (AGPL-3.0)
 
-> **Please note that I created this for my own personal use. I will not be maintaining or updating this code unless I need to make edits for myself. If you want a feature please fork the code and do whatever you need with it as allowable under the license.**
+> **IT FINALLY WORKS!!!!  Read the Launch Agent 1.0.5 packaging fix for the relevent info to ensure you get this running properly on your system.  Please note that I created this for my own personal use using ChatGPT with human verification.  This was a project to help me learn Swift and get back into coding after decades of not writing anything (hence starting with ChatGPT).  While ChatGPT was able to get me started, ChatGPT did not create code that actually worked as intended.  I was able to reach a point where I could do some manual debugging and write actual modifications for versions 1.0.4 and 1.0.5 myself.  And behold, it works!  With that said, I will not be maintaining or updating this code unless I need to make edits for myself. If you want a feature please fork the code and do whatever you need with it as allowable under the license.  I hope someone finds this useful.**
 
 **TypeShield** blocks trackpad/mouse input for a brief window after each keypress to prevent stray palm touches while typing.  
 Apple Silicon native (M1–M4), macOS 13+.
