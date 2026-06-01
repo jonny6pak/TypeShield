@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/TypeShield.d",
+    "object": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/TypeShield.o",
+    "swift-dependencies": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/master.swiftdeps"
+  },
+  "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/Sources/main.swift": {
+    "object": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.swift.o",
+    "swiftmodule": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.swiftdeps",
+    "diagnostics": "/Users/ecrescimano/Library/CloudStorage/OneDrive-Personal/Documents/XCodeRepo/TypeShield-AGPL-v3/.build/arm64-apple-macosx/release/TypeShield.build/main.dia"
+  }
+}
