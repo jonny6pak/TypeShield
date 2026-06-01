@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  TypeShield LaunchAgent template.
+
+  IMPORTANT:
+  launchd does not expand $HOME or ~ inside StandardOutPath / StandardErrorPath.
+  Before installing manually, replace __HOME__ with your absolute home path,
+  for example: /Users/yourname
+
+  If you use extras/install.sh, that script performs the replacement automatically.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.typeshield.agent</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/typeshield</string>
+    <string>--block-ms</string><string>300</string>
+    <string>--grace-ms</string><string>45</string>
+    <string>--lock-cursor</string>
+    <!-- Add --freeze-cursor if desired, but --lock-cursor is usually the stronger fix. -->
+    <!-- Remove --verbose after testing to reduce log output. -->
+    <string>--verbose</string>
+  </array>
+
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+
+  <key>StandardOutPath</key>
+  <string>__HOME__/Library/Logs/typeshield.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__HOME__/Library/Logs/typeshield.err.log</string>
+</dict>
+</plist>
